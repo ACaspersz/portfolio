@@ -1,3 +1,38 @@
 * {
     font-family: Georgia;
+    
 }
+
+nav {
+    
+    width: 100%;
+    background-color: salmon;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#page-icon {
+text-align: left;
+background-color: white;
+border: solid 1px black;
+}
+
+h1, h2, h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.heading-section {
+    padding: 100px;
+}
+
+.contact-list {
+    list-style: none;
+    display: inline;
+}
+
