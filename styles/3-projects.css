@@ -1,17 +1,27 @@
 * {
-    font-family: Georgia;
-    
+  margin: 0;
+  padding: 0;
 }
 
-/* NAVIGATION SECTION */
+body {
+    background-color: #BAF2E9;
+    color: white;
+    contrast: 1;
+    font-family: "Inconsolata", monospace;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    background-color: black;
+}
 
 nav {
     position: fixed;
     width: 100%;
-    background-color: salmon;
-    
-}
-
+    background-color:#B0F2B4;
 .nav-list {
     display: flex;
     justify-content: flex-end;
