@@ -12,28 +12,49 @@ body {
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 a:hover {
     background-color: black;
 }
 
-nav {
-    width: 100%;
-    background-color:#B0F2B4;
-    position: fixed;
-    
+#checkbox {
+    display: none;
+}
+
+.button {
+    font-size: 30px;
+    background: rgb(18, 175, 196);
+    padding: 0.5rem 2rem;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.nav-list {
+    text-decoration: none;
+    top: 0;
+    float: right;
+    padding-right: 10px;
     
 }
 
-.nav-list {
-    display: flex;
-    justify-content: flex-end;
-    text-decoration: none;
-    
-    float: right;
-    padding-right: 10px;
+.nav-menu {
+  list-style-type: none;
+  display: none;
+  text-align: right;
+  text-decoration: none;
+  margin: 5px;
+  color: white;
 }
+
+
+
+#checkbox:checked ~ .nav-menu {
+    display: block;
+
 
 .nav-list a {
     

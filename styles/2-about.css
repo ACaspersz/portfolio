@@ -18,6 +18,20 @@ a:hover {
     background-color: black;
 }
 
+#checkbox {
+    display: none;
+}
+
+.button {
+    font-size: 30px;
+    background: rgb(18, 175, 196);
+    padding: 0.5rem 2rem;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 nav {
     
     width: 100%;
@@ -26,8 +40,7 @@ nav {
 }
 
 .nav-list {
-    display: flex;
-    justify-content: flex-end;
+    
     text-decoration: none;
     top: 0;
     float: right;
@@ -35,7 +48,24 @@ nav {
     
 }
 
-.nav-list a {
+.nav-menu {
+  list-style-type: none;
+  display: none;
+  text-align: right;
+  text-decoration: none;
+  margin: 5px;
+  color: white;
+}
+
+li:hover {
+  color: magenta;
+}
+
+#checkbox:checked ~ .nav-menu {
+    display: block;
+}
+
+.nav-list {
     
 }
 

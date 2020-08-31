@@ -3,7 +3,7 @@
     <head>
         <title>Annabelle Caspersz</title> 
         <meta name="viewport" content="width=device-width, initial scale=1.0" />
-        <link href="../styles/4.media.css" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/4-media.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     
@@ -11,13 +11,16 @@
     </head>
     <body>
         <header>
-            <nav class="nav-section">
-                <i id="page-icon" class="fas fa-signature"></i>
-                <a class="nav-list" href="../1-index.html">Homepage</a>
-                <a class="nav-list" href="2-about.html">About</a>
-                <a class="nav-list" href="3-projects.html">Projects</a>
-                <a class="nav-list" href="#">Media</a>
-                <a class="nav-list" href="5-contact.html">Contact</a>
+            <i id="page-icon" class="fas fa-signature"></i>
+            <input type="checkbox" id="checkbox">
+<!-- add a label for the checkbox with a class of button to style -->
+  <label for="checkbox" class="button"><i class="fas fa-bars"></i></label> 
+            <ul class="nav-menu">
+                <li class="nav-list"> <a href="../1-index.html">Homepage</a></li>
+                <li class="nav-list"> <a href="2-about.html">About</a></li>
+                <li class="nav-list"><a href="3-projects.html">Projects</a></li>
+                <li class="nav-list"><a href="#">Media</a></li>
+                <li class="nav-list"><a href="5-contact.html">Contact</a></li>
             </nav>
         </header>
         <div class="media-section">
