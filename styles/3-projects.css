@@ -1,0 +1,56 @@
+* {
+    font-family: Georgia;
+    
+}
+
+/* NAVIGATION SECTION */
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: salmon;
+    
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    
+    float: right;
+    padding-right: 10px;
+}
+
+.nav-list a {
+    
+}
+
+#page-icon {
+text-align: left;
+background-color: white;
+border: solid 1px black;
+}
+
+/* HEADINGS SECTION */
+
+h1 {
+  font-size: 4rem; 
+  padding-top: 50px;
+}
+
+/* PROJECTS SECTION */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    margin-top: 3rem;
+}
+
+img {
+    width: 400px;
+}

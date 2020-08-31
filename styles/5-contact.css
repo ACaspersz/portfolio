@@ -1,0 +1,30 @@
+* {
+    font-family: Georgia;
+    
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: salmon;
+    
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    
+    float: right;
+    padding-right: 10px;
+}
+
+.nav-list a {
+    
+}
+
+#page-icon {
+text-align: left;
+background-color: white;
+border: solid 1px black;
+}
