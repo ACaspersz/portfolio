@@ -85,5 +85,5 @@ p {
 }
 
 img {
-    display: inline;
+    border-radius: 10px;
 }

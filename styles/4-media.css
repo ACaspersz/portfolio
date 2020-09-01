@@ -13,6 +13,7 @@ body {
 a {
     color: white;
     text-decoration: none;
+    align: center;
 }
 
 a:hover {
@@ -54,7 +55,7 @@ a:hover {
 
 #checkbox:checked ~ .nav-menu {
     display: block;
-
+}
 
 .nav-list a {
     
@@ -68,6 +69,15 @@ border: solid 1px black;
 
 /* MEDIA SECTION */
 img {
-    width: 800px;
+    width: 600px;
+    height: auto;
 }
 
+h1 {
+    padding-top: 40px;
+}
+
+h4 {
+    font-size: 40px;
+    padding: 20px;
+}

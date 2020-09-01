@@ -3,11 +3,22 @@
   padding: 0;
 }
 
+@keyframes example {
+  0%   {background-color: #F2BAC9;}
+  20%  {background-color: #F1BF98;}
+  40%  {background-color: #BAD7F2;}
+  80% {background-color: #B0F2B4;}
+  100% {background-color: #F2BAC9}
+}
+
 body {
     background-color: #BAF2E9;
     color: white;
     contrast: 1;
     font-family: "Inconsolata", monospace;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 
 a {
@@ -19,21 +30,27 @@ a:hover {
     background-color: black;
 }
 
+/* NAVIGATION STYLING */
+
 #checkbox {
     display: none;
 }
 
+
 .button {
     font-size: 30px;
-    background: rgb(18, 175, 196);
+    
     padding: 0.5rem 2rem;
     color: white;
     display: flex;
     justify-content: flex-end;
 }
 
+.button:hover {
+    background-color: black;
+}
+
 nav {
-    
     width: 100%;
     background-color:#B0F2B4;
 }
@@ -59,23 +76,12 @@ text-align: left;
 border: solid 1px black;
 }
 
+/* WELCOME SECTION */
+
 h1, h2, h4 {
     display: flex;
     text-outline: 
     
-}
-
-.heading-section {
-    padding: 100px;
-}
-
-.contact-list {
-    list-style: none;
-    display: inline;
-}
-
-h1 {
-    font-size: 2.5em;
 }
 
 h2 {
@@ -85,4 +91,20 @@ h2 {
 h4 {
  padding: 10px;
 }
+h1 {
+    font-size: 2.5em;
+}
+.heading-section {
+    padding: 100px;
+}
+
+/* CONTACT SECTION STYLING */
+.contact-list {
+    list-style: none;
+    display: inline;
+}
+
+
+
+
 
