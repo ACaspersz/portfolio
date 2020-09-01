@@ -1,17 +1,18 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
     background-color: #BAF2E9;
     color: white;
-    contrast: 1;
     font-family: "Inconsolata", monospace;
 }
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 a:hover {
@@ -33,20 +34,12 @@ a:hover {
 
 
 nav {
-    
     width: 100%;
     background-color:#B0F2B4;
     
 }
 
-.nav-list {
-    
-    text-decoration: none;
-    top: 0;
-    float: right;
-    padding-right: 10px;
-    
-}
+
 
 .nav-menu {
   list-style-type: none;
@@ -57,22 +50,24 @@ nav {
   color: white;
 }
 
-li:hover {
-  color: magenta;
-}
+
 
 #checkbox:checked ~ .nav-menu {
     display: block;
 }
 
 .nav-list {
-    
+    padding: 5px;
+
 }
 
 #page-icon {
 text-align: left;
-background-color: white;
 border: solid 1px black;
+}
+
+.about-section {
+    
 }
 
 h1 {
@@ -80,10 +75,15 @@ h1 {
 }
 
 p {
-    padding: 20px 20px
-    
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 img {
     border-radius: 10px;
+    border: 3px black solid;
+    display: block;
 }
