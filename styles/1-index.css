@@ -79,24 +79,30 @@ border: solid 1px black;
 
 /* WELCOME SECTION */
 
-h1, h2, h4 {
+h1, h2, h4, h3 {
     display: flex;
-    text-outline: 
-    
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 60px;
 }
 
 h4 {
+ font-size: 35px;
  padding: 10px;
 }
+
 h1 {
-    font-size: 2.5em;
+    font-size: 60px;
 }
 .heading-section {
     padding: 100px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 /* CONTACT SECTION STYLING */

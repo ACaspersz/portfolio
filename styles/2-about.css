@@ -75,6 +75,7 @@ h1 {
 }
 
 p {
+    color: black;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -86,4 +87,8 @@ img {
     border-radius: 10px;
     border: 3px black solid;
     display: block;
+}
+
+.education-section {
+    color: black;
 }
