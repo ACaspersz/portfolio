@@ -1,45 +1,47 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
+
 
 body {
     background-color: #BAD7F2;
-    color: black;
+    contrast: 1;
     font-family: "Inconsolata", monospace;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 
 a {
     color: white;
     text-decoration: none;
+    border: 1px solid black;
+    box-shadow: 5px 10px black;
 }
 
 a:hover {
-    background-color: black;
+    box-shadow: none;
+    transform: translateY(-4px);
 }
+
+/* NAVIGATION STYLING */
 
 #checkbox {
     display: none;
 }
 
+
 .button {
     font-size: 30px;
-    background: rgb(18, 175, 196);
     padding: 0.5rem 2rem;
     color: white;
-    display: flex;
-    justify-content: flex-end;
-}
-
-li {
-    list-style: none;
-}
-
-nav {
-    width: 100%;
-    background-color:#B0F2B4;
     
+}
+
+.button:hover {
+    background-color: black;
 }
 
 
@@ -47,26 +49,36 @@ nav {
 .nav-menu {
   list-style-type: none;
   display: none;
+  
   text-align: right;
-  text-decoration: none;
-  margin: 5px;
-  color: white;
+font-size: 1.5em;
+    text-decoration: none;
+    margin: 5px;
+    color: white;
 }
 
-
+nav-menu li:hover {
+    box-shadow: hidden;
+    transform: translateY(5px);
+}
 
 #checkbox:checked ~ .nav-menu {
     display: block;
 }
 
-.nav-list {
-    padding: 5px;
+header {
+   display:flex;
+   justify-content: space-between;
+}
 
+.menu-dropdown {
+    display: block;
 }
 
 #page-icon {
 text-align: left;
-border: solid 1px black;
+padding: 5px;
+font-size: 30px;
 }
 
 .about-section {

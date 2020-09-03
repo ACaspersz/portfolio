@@ -45,8 +45,7 @@ a:hover {
     font-size: 30px;
     padding: 0.5rem 2rem;
     color: white;
-    display: flex;
-    justify-content: flex-end;
+    
 }
 
 .button:hover {
@@ -58,16 +57,12 @@ a:hover {
 .nav-menu {
   list-style-type: none;
   display: none;
-  flex-direction: column;
+  
   text-align: right;
-    font-size: 1.5em;
+font-size: 1.5em;
     text-decoration: none;
     margin: 5px;
     color: white;
-}
-
-.nav-menu li {
-    
 }
 
 nav-menu li:hover {
@@ -81,12 +76,17 @@ nav-menu li:hover {
 
 header {
    display:flex;
+   justify-content: space-between;
+}
+
+.menu-dropdown {
+    display: block;
 }
 
 #page-icon {
 text-align: left;
-border: solid 1px black;
-
+padding: 5px;
+font-size: 30px;
 }
 
 /* WELCOME SECTION */
@@ -103,35 +103,35 @@ border: solid 1px black;
     }
 }
 
+.heading-section {
+    display: block;
+    padding: 100px 100px;
+    text-align: left;
+}
+
 h1, h2, h4, h3 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    animation: slide-in-left 1s 0.5s both;
-    
+    align-items: center; 
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 50px;
 }
 
 h4 {
  font-size: 35px;
- padding: 10px;
+ 
 }
 
 h1 {
     font-size: 60px;
 
 }
-.heading-section {
-    padding: 100px;
-}
 
 h3 {
-    font-size: 20px;
-    border: 1px black;
-    border-shadow: 5px 10px black;
+    
+    
 }
 
 
