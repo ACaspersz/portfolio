@@ -5,12 +5,13 @@
 }
 
 body {
-    background-color: #BAF2E9;
-    font-family: Georgia;
+    background-color: #BAD7F2;
+    color: black;
+    font-family: "Inconsolata", monospace;
 }
 
 a {
-    
+    color: white;
     text-decoration: none;
 }
 

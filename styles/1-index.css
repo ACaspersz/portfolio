@@ -14,7 +14,6 @@
 }
 
 body {
-    background-color: #BAF2E9;
     color: white;
     contrast: 1;
     font-family: "Inconsolata", monospace;
@@ -26,10 +25,13 @@ body {
 a {
     color: white;
     text-decoration: none;
+    border: 1px solid black;
+    box-shadow: 5px 10px black;
 }
 
 a:hover {
-    background-color: black;
+    box-shadow: none;
+    transform: translateY(-4px);
 }
 
 /* NAVIGATION STYLING */
@@ -51,15 +53,12 @@ a:hover {
     background-color: black;
 }
 
-nav {
-    width: 100%;
-    background-color:#B0F2B4;
-}
 
 
 .nav-menu {
   list-style-type: none;
   display: none;
+  flex-direction: column;
   text-align: right;
     font-size: 1.5em;
     text-decoration: none;
@@ -67,22 +66,49 @@ nav {
     color: white;
 }
 
+.nav-menu li {
+    
+}
+
+nav-menu li:hover {
+    box-shadow: hidden;
+    transform: translateY(5px);
+}
 
 #checkbox:checked ~ .nav-menu {
     display: block;
 }
 
+header {
+   display:flex;
+}
+
 #page-icon {
 text-align: left;
 border: solid 1px black;
+
 }
 
 /* WELCOME SECTION */
+
+@keyframes slide-in-left {
+    0 {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 h1, h2, h4, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: slide-in-left 1s 0.5s both;
+    
 }
 
 h2 {
@@ -96,6 +122,7 @@ h4 {
 
 h1 {
     font-size: 60px;
+
 }
 .heading-section {
     padding: 100px;
@@ -103,13 +130,10 @@ h1 {
 
 h3 {
     font-size: 20px;
+    border: 1px black;
+    border-shadow: 5px 10px black;
 }
 
-/* CONTACT SECTION STYLING */
-.contact-list {
-    list-style: none;
-    display: inline;
-}
 
 
 

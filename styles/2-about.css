@@ -5,8 +5,8 @@
 }
 
 body {
-    background-color: #BAF2E9;
-    color: white;
+    background-color: #BAD7F2;
+    color: black;
     font-family: "Inconsolata", monospace;
 }
 
@@ -32,6 +32,9 @@ a:hover {
     justify-content: flex-end;
 }
 
+li {
+    list-style: none;
+}
 
 nav {
     width: 100%;
@@ -76,6 +79,7 @@ h1 {
 
 p {
     color: black;
+    padding: 50px;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -87,8 +91,11 @@ img {
     border-radius: 10px;
     border: 3px black solid;
     display: block;
+    float: left;
+    margin: 40px;
 }
 
 .education-section {
     color: black;
+    display: inline;
 }
