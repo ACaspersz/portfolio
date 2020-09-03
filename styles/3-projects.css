@@ -46,15 +46,15 @@ a:hover {
   list-style-type: none;
   display: none;
   text-align: right;
-font-size: 1.5em;
+  font-size: 1.5em;
     text-decoration: none;
-    margin: 5px;
     color: white;
 }
 
 li {
  border: 1px solid black;
- box-shadow: 15px 10px black;   
+ box-shadow: 15px 10px black;
+ margin: 10px;  
 }
 
 li:hover {
@@ -120,8 +120,8 @@ h1 {
 .content {
 position: relative;
 max-width: 100%;
-  margin: auto;
-  overflow: hidden;
+margin: auto;
+overflow: hidden;
 }
 
 
@@ -135,24 +135,11 @@ max-width: 100%;
   bottom: 0;
   right: 0;
   opacity: 0;
-  
 }
 
-.content .content-overlay2 {
-  border: 2px solid #fff
-  position: absolute;
-  height: 95%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  opacity: 0;
-  
-}
 
-.content:hover .content-overlay, .content:hover .content-overlay2{
+
+.content:hover .content-overlay {
   opacity: 1;
 }
 
@@ -164,22 +151,34 @@ max-width: 100%;
   padding-right: 1em;
   width: 100%;
   top: 50%;
-  left: 50%;
+  left: 0%
   opacity: 0;
-  transform: translate(-50%, -50%);
-  
+  letter-spacing: 0;
 }
 
 .content:hover .content-details{
   opacity: 1;
+  letter-spacing: 4px;
+  transition: all 280ms ease-in-out;
 }
 
-.content-details h3{
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  
+.content-details-showall {
+   position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 0%;
+  letter-spacing: 0;
+}
+
+.content:hover .content-details-showall {
+  letter-spacing: 5px;
+  transition: all 280ms ease-in-out;
+}
+
+.btn-show-all {
 }
 
 

@@ -23,13 +23,19 @@ body {
 }
 
 a {
-    color: white;
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    color: black;
     text-decoration: none;
     border: 1px solid black;
     box-shadow: 5px 10px black;
+    margin: 10px;
 }
 
-a:hover {
+li:hover {
     box-shadow: none;
     transform: translateY(-4px);
 }
