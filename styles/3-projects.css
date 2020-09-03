@@ -6,24 +6,19 @@
 
 body {
     background-color: #BAD7F2;
-    color: white;
+    color: black;
     contrast: 1;
     font-family: "Inconsolata", monospace;
-    animation-name: example;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
-    border: 1px solid black;
-    box-shadow: 5px 10px black;
+    
 }
 
 a:hover {
-    box-shadow: none;
-    transform: translateY(-4px);
+    color: white;
 }
 
 /* NAVIGATION STYLING */
@@ -36,12 +31,13 @@ a:hover {
 .button {
     font-size: 30px;
     padding: 0.5rem 2rem;
-    color: white;
+    color: black;
     
 }
 
 .button:hover {
     background-color: black;
+    color: white;
 }
 
 
@@ -49,7 +45,6 @@ a:hover {
 .nav-menu {
   list-style-type: none;
   display: none;
-  
   text-align: right;
 font-size: 1.5em;
     text-decoration: none;
@@ -57,9 +52,15 @@ font-size: 1.5em;
     color: white;
 }
 
-nav-menu li:hover {
-    box-shadow: hidden;
-    transform: translateY(5px);
+li {
+ border: 1px solid black;
+ box-shadow: 15px 10px black;   
+}
+
+li:hover {
+background-color: black;
+box-shadow: none;
+
 }
 
 #checkbox:checked ~ .nav-menu {
@@ -82,8 +83,6 @@ font-size: 30px;
 }
 
 /* HEADINGS SECTION */
-
-
 h1 {
     padding: 1.5em 1.5em
 }
@@ -98,7 +97,7 @@ h1 {
 
 /* PROJECTS SECTION */
 
-.projects-grid {
+.container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -107,7 +106,7 @@ h1 {
 }
 
 .row {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
   padding: 0 40px;
 }
@@ -118,23 +117,84 @@ h1 {
   padding: 0 15px;
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+.content {
+position: relative;
+max-width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 
-.project-image {
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.37);
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  left: 0;
+  top: 5%;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
   
 }
 
-project-link {
+.content .content-overlay2 {
+  border: 2px solid #fff
+  position: absolute;
+  height: 95%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  
+}
+
+.content:hover .content-overlay, .content:hover .content-overlay2{
+  opacity: 1;
+}
+
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  
+}
+
+.content:hover .content-details{
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  
+}
+
+
+.project-link {
     margin: 30px;
-padding: 30px
+   
 }
+
 img {
-    
+  display: block;
+  width: 100%;
+  height: 500px; 
+  object-fit: cover; 
 }
+
 
 
 @media screen and (max-width: 800px) {
