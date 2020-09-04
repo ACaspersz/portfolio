@@ -11,6 +11,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 #checkbox {
@@ -72,12 +73,12 @@ color: black;
 /* MEDIA SECTION */
 .media-section {
     float: left;
-    width: 75%;
+    width: 80%;
     padding-left: 25px;
 }
 
 img {
- width: 400px;
+ max-width: 450px;
  max-height: 100%;
 float: left;
 margin: 10px;
@@ -92,24 +93,53 @@ h1 {
 
 h4 {
     font-size: 40px;
-    padding: 20px;
-    color: black;
-}
-
-p, a {
-    color: black;
-    margin: 15px;
-}
-
-
-.content-details {
     
 }
 
+p {
+    font-size: 20px;
+}
+
+h4, p {
+    padding: 20px 45px 0px 30px;
+}
+
+.content-details {
+    flex-direction: column;
+}
+
 .media-container {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    height: auto;
+    padding-bottom: 20px;
+    display: flex;
 }
 
 .media-container:hover {
     border: 2px solid black;
 }
+
+.see-all-link {
+    padding-bottom: 100px;
+    text-align: right;
+    float: right;
+}
+
+.see-all-link:hover {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .content-details {
+      display: block;
+  } 
+  
+  .media-container {
+      flex-direction: column;
+  }
+
+  .media-section {
+      
+  }
+}
+
