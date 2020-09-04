@@ -46,6 +46,7 @@ header {
   text-align: right;
   font-size: 1.5em;
   text-decoration: none; 
+  
 }
 
 li {
@@ -61,10 +62,14 @@ box-shadow: none;
 
 #checkbox:checked ~ .nav-menu {
     display: block;
+    position: absolute;
+    z-index: 1;
 }
 
 .menu-dropdown {
     display: block;
+    padding-top: 10px;
+    padding-right: 30px;
 }
 
 #page-icon {
@@ -116,6 +121,7 @@ h1 {
 
 .input:hover, .form-custom-select:hover, .contact-custom-select:hover{
     border-bottom: 2px solid yellow;
+    transition: all 0.5s ease-in-out;
 }
 
 .reason {
@@ -138,12 +144,12 @@ h1 {
     border: 2px solid yellow;
     text-align: center;
     padding: 0.75rem 2rem;
-    border-radius: 0;
     margin: 20px;
 }
 
 .btn-send-message-button:hover {
     background-color: yellow;
+    transition: all 0.5s ease-in-out;
 }
 
 /* CONTACT LINKS SECTION */
@@ -159,6 +165,7 @@ h1 {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
+    animation: slide-in-left 0.5s 0.5s both;
 }
 
 @keyframes slide-in-left {
@@ -173,7 +180,8 @@ h1 {
 
 .sub-contact-heading {
     display: block;
-    animation: slide-in-left 0.5s 0.5s both;
+    animation: slide-in-left 0.8s 0.5s both;
+    font-size: 30px;
 }
 
 .contact-section {
@@ -187,7 +195,7 @@ h1 {
     border: 2px solid black;
     padding: 10px;
     border-radius: 80%;
-    font-size: 70px;
+    font-size: 50px;
     position: relative;
     margin: 10px;
     box-shadow: 3px 3px black;
@@ -202,7 +210,7 @@ transform: matrix(1, 0, 0, 1, 0, -5);
 
 .form-container {
     width: 720px;
-    max-width: 100%;
+    max-width: 90%;
     padding-right: 15px;
     padding-left: 15px;
     }
@@ -211,7 +219,7 @@ transform: matrix(1, 0, 0, 1, 0, -5);
 @media only screen and (max-width: 600px) {
 .form-container {
     width: 540px;
-    max-width: 100%;
+    max-width: 90%;
     }
 }
 
