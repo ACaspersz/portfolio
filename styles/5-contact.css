@@ -1,28 +1,28 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
     background-color: #BAD7F2;
-    color: white;
-    contrast: 1;
     font-family: "Inconsolata", monospace;
 }
 
 a {
-    color: white;
     text-decoration: none;
+    color: black;
 }
 
 a:hover {
-    background-color: black;
+    
 }
 
-li {
-    display: inline;
-    text-align: center;
+header {
+   display:flex;
+   justify-content: space-between;
 }
+
 
 #checkbox {
     display: none;
@@ -30,45 +30,189 @@ li {
 
 .button {
     font-size: 30px;
-    background: rgb(18, 175, 196);
     padding: 0.5rem 2rem;
+    color: black;
+}
+
+.button:hover {
+    background-color: black;
     color: white;
-    display: flex;
-    justify-content: flex-end;
 }
 
-
-.nav-list {
-    
-    
-}
 
 .nav-menu {
   list-style-type: none;
   display: none;
   text-align: right;
-  text-decoration: none;
-  margin: 5px;
-  color: white;
+  font-size: 1.5em;
+  text-decoration: none; 
 }
 
+li {
+ border: 1px solid black;
+ box-shadow: 10px 5px black;
+ margin: 10px; 
+ list-style: none; 
+}
 
+li:hover {
+box-shadow: none;
+}
 
 #checkbox:checked ~ .nav-menu {
     display: block;
+}
 
-
+.menu-dropdown {
+    display: block;
+}
 
 #page-icon {
 text-align: left;
-background-color: white;
-border: solid 1px black;
+padding: 5px;
+font-size: 30px;
+color: black;
+}
+
+/* HEADING SECTION */
+
+h1 {
+  font-size: 4rem; 
+  padding: 50px;
+  text-align: center;
+}
+
+/* FORM SECTION */
+
+.forms-section {
+    
 }
 
 .form-container {
-    margin-left: 40px;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.form-container:hover {
+    
+}
+
+.input {
+    width: calc(80% - 50px);
+    }
+
+
+.input, .form-custom-select, .contact-custom-select {
+    border: 0;
+    line-height: 1.5;
+    border-bottom: 2px solid grey;
+    border-radius: none;
+    padding: 1px 2px;
+    font-family: inherit;
+    font-size: 1.5rem;
+    background-color: #BAD7F2;
+    
+}
+
+.input:hover, .form-custom-select:hover, .contact-custom-select:hover{
+    border-bottom: 2px solid yellow;
+}
+
+.reason {
+    padding: 0px 5px;
+    
+}
+
+
+.input:active, .form-custom-select:active, .contact-custom-select:active {
+    border-bottom: 2px solid yellow;
+}
+
+
+.btn-send-message-button {
+    font-style: italic;
+    font-family: inherit;
+    font-size: 20px;
+    background-image: none;
+    background-color: transparent;
+    border: 2px solid yellow;
+    text-align: center;
+    padding: 0.75rem 2rem;
+    border-radius: 0;
+    margin: 20px;
+}
+
+.btn-send-message-button:hover {
+    background-color: yellow;
+}
+
+/* CONTACT LINKS SECTION */
+
+.title-container {
+    display: block;
+    text-align: center;
+    bottom: 40px;
+    left: 10%;
+}
+
+.primary-contact-heading {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes slide-in-left {
+    0% {transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+.sub-contact-heading {
+    display: block;
+    animation: slide-in-left 0.5s 0.5s both;
 }
 
 .contact-section {
-    padding: 20px
+    display: flex;
+    justify-content: center;
+    
 }
+
+.contact-item {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 80%;
+    font-size: 70px;
+    position: relative;
+    margin: 10px;
+    box-shadow: 3px 3px black;
+}
+
+.contact-item:hover {
+transform: matrix(1, 0, 0, 1, 0, -5);
+}
+
+/* MEDIA BREAKPOINTS */
+@media only screen and (min-width: 768px){ 
+
+.form-container {
+    width: 720px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+.form-container {
+    width: 540px;
+    max-width: 100%;
+    }
+}
+
+
