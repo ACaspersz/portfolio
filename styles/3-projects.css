@@ -65,6 +65,7 @@ box-shadow: none;
 
 #checkbox:checked ~ .nav-menu {
     display: block;
+    position: absolute;
 }
 
 header {
