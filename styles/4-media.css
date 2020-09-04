@@ -1,13 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
 body {
     background-color: #BAD7F2;
-    color: white;
-    contrast: 1;
     font-family: "Inconsolata", monospace;
+}
+
+a {
+    text-decoration: none;
 }
 
 #checkbox {
@@ -19,7 +22,6 @@ body {
     font-size: 30px;
     padding: 0.5rem 2rem;
     color: black;
-    
 }
 
 .button:hover {
@@ -27,15 +29,13 @@ body {
     color: white;
 }
 
-
-
 .nav-menu {
   list-style-type: none;
   display: none;
   text-align: right;
   font-size: 1.5em;
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+    
 }
 
 li {
@@ -45,7 +45,6 @@ li {
 }
 
 li:hover {
-background-color: black;
 box-shadow: none;
 
 }
@@ -67,22 +66,27 @@ header {
 text-align: left;
 padding: 5px;
 font-size: 30px;
+color: black;
 }
 
 /* MEDIA SECTION */
+.media-section {
+    float: left;
+    width: 75%;
+    padding-left: 25px;
+}
+
 img {
-display: inline; 
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  
+ width: 400px;
+ max-height: 100%;
+float: left;
+margin: 10px;
 }
 
 
 h1 {
   font-size: 4rem; 
   padding: 50px;
-  
 }
 
 
@@ -97,10 +101,15 @@ p, a {
     margin: 15px;
 }
 
-.media-link {
-    border: 1px solid black;
-}
 
 .content-details {
-    display: inline;
+    
+}
+
+.media-container {
+    margin-bottom: 20px;
+}
+
+.media-container:hover {
+    border: 2px solid black;
 }
