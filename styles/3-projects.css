@@ -157,7 +157,9 @@ overflow: hidden;
 .content:hover .content-details{
   opacity: 1;
   letter-spacing: 4px;
+  color: white;
   transition: all 280ms ease-in-out;
+
 }
 
 .content-details-showall {
@@ -174,6 +176,7 @@ overflow: hidden;
 .content:hover .content-details-showall {
   letter-spacing: 5px;
   transition: all 280ms ease-in-out;
+  color: white;
 }
 
 .btn-show-all {
@@ -202,10 +205,38 @@ img {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
+
+  .content-details {
+    color: white;
+    background-color: black;
+  }
+
+.content-details-showall {
+  color: white;
+  background-color: black;
 }
 
+}
+
+@media screen and (max-width: 724px) {
+   .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .content-details {
+    color: white;
+    background-color: black;
+  }
+
+.content-details-showall {
+  color: white;
+  background-color: black;
+}
+
+}

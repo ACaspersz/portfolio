@@ -116,6 +116,16 @@ h1 {
     display: inline-block;
 }
 
+.small-bio > a {
+background-color: black;
+color: white;
+}
+
+.small-bio >a:hover {
+    background-color: white;
+    color: black;
+}
+
 p {
     color: black;
     margin: 1em;

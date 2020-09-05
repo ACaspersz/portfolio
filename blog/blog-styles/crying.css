@@ -200,13 +200,18 @@ p {
 
 @media screen and (max-width: 768px) {
 .crying-section {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .link {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.img {
+width: 125px;
+  height: 200px;
 }
 }
 

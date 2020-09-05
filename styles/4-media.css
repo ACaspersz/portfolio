@@ -139,7 +139,7 @@ h4, p {
     color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .content-details {
       display: block;
   } 
@@ -147,9 +147,14 @@ h4, p {
   .media-container {
       flex-direction: column;
   }
+.media-section {
+    
+}
 
-  .media-section {
-      
+  .img {
+width: 100%;
+  max-width: 100% ;
+  height: 200px;  
   }
 }
 
