@@ -88,7 +88,7 @@ font-size: 30px;
 
 /* MAIN CONTENT STYLING */
 
-.crying-section {
+.wonka-section {
     display: flex;
     flex-wrap: wrap;
     margin-left: 120px;
@@ -200,7 +200,7 @@ p {
 /* MEDIA BREAKPOINTS */
 
 @media screen and (max-width: 768px) {
-.crying-section {
+.wonka-section {
     margin-left: 20px;
     margin-right: 20px;
 }
