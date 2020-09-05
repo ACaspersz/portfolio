@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
 body {
@@ -14,10 +14,19 @@ a {
     color: black;
 }
 
+a:hover {
+    
+}
+
+header {
+   display:flex;
+   justify-content: space-between;
+}
+
+
 #checkbox {
     display: none;
 }
-
 
 .button {
     font-size: 30px;
@@ -30,37 +39,37 @@ a {
     color: white;
 }
 
+
 .nav-menu {
   list-style-type: none;
   display: none;
   text-align: right;
   font-size: 1.5em;
   text-decoration: none; 
+  
 }
 
 li {
  border: 1px solid black;
- box-shadow: 15px 10px black;
- margin: 10px;  
+ box-shadow: 10px 5px black;
+ margin: 10px; 
+ list-style: none; 
 }
 
 li:hover {
 box-shadow: none;
-
 }
 
 #checkbox:checked ~ .nav-menu {
     display: block;
     position: absolute;
-}
-
-header {
-   display:flex;
-   justify-content: space-between;
+    z-index: 1;
 }
 
 .menu-dropdown {
     display: block;
+    padding-top: 10px;
+    padding-right: 30px;
 }
 
 #page-icon {
