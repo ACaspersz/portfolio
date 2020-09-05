@@ -43,8 +43,8 @@ a:hover {
   display: none;
   text-align: left;
   font-size: 1.5em;
-text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
     
 }
 
@@ -68,9 +68,6 @@ box-shadow: none;
     z-index: 1;
 }
 
-#checkbox:checked ~ .button {
-}
-
 header {
    display:flex;
    justify-content: space-between;
@@ -88,7 +85,7 @@ font-size: 30px;
 
 /* MAIN CONTENT STYLING */
 
-.crying-section {
+.cyber-section {
     display: flex;
     flex-wrap: wrap;
     margin-left: 120px;
@@ -200,7 +197,7 @@ p {
 /* MEDIA BREAKPOINTS */
 
 @media screen and (max-width: 768px) {
-.crying-section {
+.cyber-section {
     margin-left: 20px;
     margin-right: 20px;
 }
