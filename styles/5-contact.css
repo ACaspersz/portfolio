@@ -49,14 +49,15 @@ header {
   
 }
 
-li {
+.nav-menu > li {
  border: 1px solid black;
- box-shadow: 10px 5px black;
+ box-shadow: 5px 5px black;
  margin: 10px; 
  list-style: none; 
 }
 
-li:hover {
+.nav-menu > li:hover {
+transform: matrix(1, 0, 0, 1, 0, -5);
 box-shadow: none;
 }
 
