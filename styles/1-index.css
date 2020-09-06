@@ -40,112 +40,9 @@ li:hover {
     box-shadow: none;
     transform: translateY(-4px);
 }
-
-/* NAVIGATION STYLING */
-
-#checkbox {
-    display: none;
-}
-
-
-.button {
-    font-size: 30px;
-    padding: 0.5rem 2rem;
-    color: white;
-    text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
-    
-}
-
-.button:hover {
-    background-color: black;
-}
-
-
-
-.nav-menu {
-  list-style-type: none;
-  display: none;
-  text-align: right;
-font-size: 1.5em;
-    text-decoration: none;
-    margin: 5px;
-    color: white;
-    text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
-}
-
-nav-menu li:hover {
-    box-shadow: none;
-    transform: translateY(-5px);
-}
-
-#checkbox:checked ~ .nav-menu {
-    display: block;
-    z-index: 1;
-}
-
-header {
-   display:flex;
-   justify-content: space-between;
-}
-
-.menu-dropdown {
-    display: block;
-}
-
-#page-icon {
-text-align: left;
-padding: 5px;
-font-size: 30px;
-text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
-}
-
-/* WELCOME SECTION */
-
-@keyframes slide-in-left {
-    0% {transform: translateX(-1000px);
-    opacity: 0;
-    }
-    100% {
-    transform: translateX(0);
-    opacity: 1;
-    }
-}
-
-.container {
-    
-}
-
-.heading-section {
-    margin-top: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    line-spacing: 2;
-    text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
-}
-
-
 h1 {
     font-size: 6rem;
     animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
-}
-
-h1, h2, h3, h4 {
-    
 }
 
 h2 {
@@ -162,8 +59,111 @@ h4 {
  font-size: 2rem;
  padding-bottom: 100px;
 }
+/* NAVIGATION STYLING */
 
-@media only screen and (max-width: 720px) {
+header {
+   display:flex;
+   justify-content: space-between;
+}
+/* space-between gives the ability to oppositely position the icon from the menu button */
+
+#page-icon {
+text-align: left;
+padding: 5px;
+font-size: 30px;
+text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+
+/* CHECKBOX HACK */
+#checkbox {
+    display: none;
+}
+
+
+#checkbox:checked ~ .nav-menu {
+    display: block;
+    z-index: 1;
+}
+
+.button {
+    font-size: 30px;
+    padding: 0.5rem 2rem;
+    color: white;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.menu-dropdown {
+    display: block;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: none;
+    text-align: right;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+
+nav-menu li:hover {
+    box-shadow: none;
+    transform: translateY(-5px);
+}
+
+
+
+/* WELCOME SECTION */
+
+@keyframes slide-in-left {
+    0% {transform: translateX(-1000px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+.heading-section {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    text-align: left;
+    line-spacing: 2;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+
+
+/* MEDIA BREAKPOINTS */
+
+/* included ipad and mobile together as only headings need responsivity */
+@media only screen and (max-width: 750px) {
+    .heading-section {
+        text-align: center;
+    }
+    
     h1 {
         font-size: 3rem;
     }
