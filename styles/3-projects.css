@@ -1,3 +1,5 @@
+/* GENERAL STYLING */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +16,7 @@ a {
     color: black;
 }
 
-a:hover {
-    
-}
+/* NAV SECTION */
 
 header {
    display:flex;
@@ -163,10 +163,10 @@ overflow: hidden;
 }
 
 .content-details-showall {
-   position: absolute;
+  position: absolute;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 0.9em;
+  padding-right: 0.9em;
   width: 100%;
   top: 50%;
   left: 0%;
@@ -178,10 +178,6 @@ overflow: hidden;
   transition: all 280ms ease-in-out;
   color: white;
 }
-
-.btn-show-all {
-}
-
 
 .project-link {
     margin: 30px;
@@ -195,7 +191,7 @@ img {
   object-fit: cover; 
 }
 
-
+/* MEDIA BREAKPOINTS */
 
 @media screen and (max-width: 800px) {
   .column {
@@ -204,8 +200,7 @@ img {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .column {
     flex: 100%;
     max-width: 100%;
@@ -223,7 +218,7 @@ img {
 
 }
 
-@media screen and (max-width: 724px) {
+@media screen and (max-width: 750px) {
    .column {
     flex: 100%;
     max-width: 100%;
