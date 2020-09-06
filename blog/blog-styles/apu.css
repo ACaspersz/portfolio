@@ -1,3 +1,5 @@
+/* GENERAL STYLING */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,16 +16,21 @@ a {
     color: black;
 }
 
-a:hover {
-    
-}
+/* NAV SECTION */
 
 header {
    display:flex;
    justify-content: space-between;
 }
 
+#page-icon {
+text-align: left;
+padding: 5px;
+font-size: 30px;
+color: black;
+}
 
+/* Used Checkbox hack */
 #checkbox {
     display: none;
 }
@@ -37,6 +44,13 @@ header {
 .button:hover {
     background-color: black;
     color: white;
+}
+
+
+.menu-dropdown {
+    display: block;
+    padding-top: 10px;
+    padding-right: 30px;
 }
 
 
@@ -71,18 +85,6 @@ box-shadow: none;
     opacity: 1;
 }
 
-.menu-dropdown {
-    display: block;
-    padding-top: 10px;
-    padding-right: 30px;
-}
-
-#page-icon {
-text-align: left;
-padding: 5px;
-font-size: 30px;
-color: black;
-}
 
 /* MAIN CONTENT STYLING */
 
@@ -99,6 +101,7 @@ color: black;
     text-size-adjust: 100%;
 }
 
+/* HEADINGS MAIN */
 .heading-section {
     padding-top: 5rem;
     vertical-align: middle;
@@ -117,6 +120,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* SHARE LINKS SECTION */
 .share-heading {
     display: inline-block;
     text-transform: uppercase;
@@ -134,12 +138,15 @@ h1 {
     font-size: 20px;
 }
 
+/* MAIN IMAGE */
 img {
     display: block;
     vertical-align: middle;
     max-width: 60%;
     width: 100%;
 }
+
+/* CONTENT HASHTAGS */
 
 .tags {
     padding-top: 20px;
@@ -158,6 +165,8 @@ img {
     background-color: black;
 }
 
+/* TEXT PARAGRAPH STYLING */
+
 .content-text {
     padding-bottom: 3rem !important;
     position: relative;
@@ -174,6 +183,7 @@ p {
     display: block;
 }
 
+/* LINK BUTTON STYLING */
 .link-page {
     font-family: 'League Gothic','Helvetica Neue',Helvetica,Arial,sans-serif;
     padding: 2rem 0;
