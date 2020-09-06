@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- HEAD SECTION: Imports, Styles, Icons etc -->
     <title>Annabelle Caspersz</title> 
     <meta name="viewport" content="width=device-width, initial scale=1.0" />
     <link href="../styles/5-contact.css" rel="stylesheet" integrity="sha384-fuxyZfZDAzPdK/xR2pQQdyOO1ZQaRQU40xWzNEa487SoEqRyqITosJmeBwXLycJy" crossorigin="anonymous">
@@ -9,28 +10,34 @@
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
   </head>
   <body>
+    <!-- NAV SECTION -->
     <header>
       <i id="page-icon" class="fas fa-signature"></i>
       <div class="menu-dropdown">
-      <input type="checkbox" id="checkbox">
-      <label for="checkbox" class="button"><i class="fas fa-bars"></i></label> 
-        <ul class="nav-menu">
-          <li class="nav-list"> <a href="../1-index.html">Homepage</a></li>
-          <li class="nav-list"> <a href="2-about.html">About</a></li>
-          <li class="nav-list"> <a href="3-projects.html">Projects</a></li>
-          <li class="nav-list"><a href="4-media.html">Media</a></li>
-          <li class="nav-list"><a href="#">Contact</a></li>
-        </ul>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="button"><i class="fas fa-bars"></i></label> 
+          <ul class="nav-menu">
+            <li class="nav-list"> <a href="../index.html">Homepage</a></li>
+            <li class="nav-list"> <a href="2-about.html">About</a></li>
+            <li class="nav-list"> <a href="3-projects.html">Projects</a></li>
+            <li class="nav-list"><a href="4-media.html">Media</a></li>
+            <li class="nav-list"><a href="#">Contact</a></li>
+          </ul>
       </div>
     </header>
+
     <!-- FORMS SECTION -->
+      <!-- HEADING FOR FORMS SECTION -->
     <div class="forms-section">
       <h1>Let's work together!</h1>
-    <!-- Contact Form here -->
+
+    <!-- CONTACT FORM. Note this is not a functioning form! -->
       <div class="form-container">
         <form id="contact-form" novalidate="novalidate">
           <p>hi, i'm
+            <!-- Input area to enter name -->
             <input type="text" class="input" name="name" placeholder="Mr. Green" required="">, and i'd like to
+            <!-- Dropdown for Reason for Contact -->
             <span class="reason-dropdown">
               <select class="form-custom-select" name="reason">
                 <option class="reason" value="get to know you better">get to know you better</option>
@@ -39,6 +46,7 @@
               </select>
             </span>.
           </p>
+          <!-- Dropdown box for contact preferences -->
           <p>you can best reach me via
             <span class="contact-dropdown">
               <select class="contact-custom-select" name="method">
@@ -46,8 +54,11 @@
                 <option value="phone">phone</option>
               </select>
             </span> at
+            <!-- Input for entering email -->
+            <!-- Do I need to enter an additional type for entering a phone number? -->
             <input type="email" placeholder="revolver@ballroom.com" class="input" name="contact" required="">.
           </p>
+          <!-- Send Message Button -->
           <div class="send-message-button">
           <input type="submit" class="btn-send-message-button" value="send message">
           <div id="messages"></div>
@@ -59,15 +70,18 @@
   <!-- CONTACT SECTION -->
     <div class="contact-container">
       <div class="title-container">
+        <!-- Contact headings -->
         <span class="primary-contact-heading">Thanks for stopping by!</span>
         <span class="sub-contact-heading">You can find me at:</span>
       </div>
+
+      <!-- Contact Buttons -->
       <div class="contact-section">
         <div class="contact-item"><a href="https://github.com/ACaspersz"> <i class="fab fa-github"></i></a></div>
         <div class="contact-item"><a href="https://codepen.io/acaspersz"><i class="fab fa-codepen"></i></a></div>
         <div class="contact-item"><a href="https://www.linkedin.com/in/annabelle-caspersz-774575ab/"><i class="fab fa-linkedin"></i></a></div>
         <div class="contact-item"><a href="https://twitter.com/AnnabelleCaspe7"><i class="fab fa-twitter"></i></a></div>
-        <div class="contact-item"><a href="emailto: a.casperszz@gmail.com"><i class="fas fa-envelope"></i></a></div>
+        <div class="contact-item"><a href="mailto:a.casperszz@gmail.com"><i class="fas fa-envelope"></i></a></div>
       </div>
     </div>
   </body>
